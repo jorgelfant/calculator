@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example.testing</groupId>
+    <artifactId>calculator</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!--On ajoute ceci-->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>11.0.4</maven.compiler.source>
+        <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
+    </properties>
+
+    <!--Ensuite nous allons importer la dependence à Junit pour cela un petit tour sur mvnrepository.com
+        sur ce site on trouve toutes les dependence's de maven, un fois sur le sit on tape junit-jupiter
+        après on choisi JUnit Jupiter (Aggregator) et c'est là que l'on choisi la dernière version 5.5.2
+        et on copie-colle la dependence
+    -->
+
+    <!-- ON ouvre ici la balise dependencies on on va mettre nos dependence's -->
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.5.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    <!--PAR CONVENTION Maven place les classes de test  dans SRC / TEST  /JAVA
+        C'est ici donc que l'on va créer un fichier de type junit test case -->
+
+
+</project>
